@@ -19,7 +19,7 @@ export class TriviaService {
 
   constructor() { }
 
-  getQuestions() {
+  getQuestion() {
     return this.question$;
   }
 

@@ -14,6 +14,6 @@ export class AppComponent implements OnInit{
   constructor(private trivia:TriviaService) { }
 
   ngOnInit() {
-    this.question$ = this.trivia.getQuestions();
+    this.question$ = this.trivia.getQuestion();
   }
 }
