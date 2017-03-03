@@ -1,6 +1,6 @@
 # Angular Async Data Binding With ngIf/ngElse example
 
-[Full tutorial url (greek)](https://www.firebit.gr/fireblog/)
+[Full tutorial url (greek)](https://www.firebit.gr/fireblog/) - not ready yet
 
 ## Install [angular/cli](https://github.com/angular/angular-cli)
 
