@@ -1,3 +1,28 @@
-<h1>
-  {{title}}
-</h1>
+<h2>Χωρίς ngIf/ngElse </h2>
+<div>
+    <h3><i>{{(question$ | async)?.question}}</i></h3>
+    <div>
+        {{(question$ | async)?.category}}
+    </div>
+    <div>
+        {{(question$ | async)?.difficulty}}
+    </div>
+</div>
+
+<h1>Με ngIf/ngElse</h1>
+<div *ngIf="question$ | async; let question; else loading">
+    <div>
+        <h3><i>{{question.question}}</i></h3>
+        <div>
+            {{question.category}}
+        </div>
+        <div>
+            {{question.difficulty}}
+        </div>
+    </div>
+</div>
+
+<ng-template #loading>
+    <div style="border: 1px solid red">Χμ.. ποια να είναι η ερώτηση?</div>
+</ng-template>
+    
